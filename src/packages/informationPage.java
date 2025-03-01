@@ -13,32 +13,41 @@ public class informationPage {
         panel.setBackground(Color.yellow);
         panel.add(Box.createRigidArea(new Dimension(0,10)));
         // Name Label and Text Field
-        JLabel nameLabel = new JLabel("اسم");
+
+            JLabel nameLabel = new JLabel("Name");
         nameLabel.setMaximumSize(new Dimension(500,50));
+
         JTextField nameField = new JTextField(15);
         nameField.setMaximumSize(new Dimension(500,50));
 
         // Age Label and Text Field
-        JLabel ageLabel = new JLabel("سن");
+
+            JLabel ageLabel = new JLabel("Age");
         ageLabel.setMaximumSize(new Dimension(500,50));
+
         JTextField ageField = new JTextField(15);
         ageField.setMaximumSize(new Dimension(500,50));
         // Email Label and Text Field
-        JLabel emailLabel = new JLabel("ایمیل");
+
+            JLabel emailLabel = new JLabel("Gmail");
         emailLabel.setMaximumSize(new Dimension(500,50));
+
+
+
 
         JTextField emailField = new JTextField(15);
         emailField.setMaximumSize(new Dimension(500,50));
 
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
         // Software Familiarity Level
-        JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
-        JRadioButton level1 = new JRadioButton("مبتدی");
-        JRadioButton level2 = new JRadioButton("متوسط");
 
-        JRadioButton level3 = new JRadioButton("پیشرفته");
+            JLabel levelLabel = new JLabel("Level of Familiarity with Similar Software ");
+            JRadioButton level1 = new JRadioButton("Beginner");
+            JRadioButton level2 = new JRadioButton("Intermediate");
+            JRadioButton level3 = new JRadioButton("Advanced");
+            JRadioButton level4 = new JRadioButton("No Familiarity");
 
-        JRadioButton level4 = new JRadioButton("بدون آشنایی");
+
 
 
         // Group the radio buttons
@@ -49,8 +58,12 @@ public class informationPage {
         group.add(level4);
 
         // Next Page Button
+
         panel.add(Box.createRigidArea(new Dimension(0, 20)));
-        JButton nextButton = new JButton("صفحه بعد");
+            JButton nextButton = new JButton("Next Page");
+
+
+
 
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
