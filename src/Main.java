@@ -2,11 +2,15 @@ import javax.swing.*;
 import packages.informationPage;
 import java.awt.*;
 
+
 public class Main {
 
     public static void main(String[] args) {
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey Form");
+        Font myFont = new Font("Arial", Font.PLAIN, 16);
+        frame.setFont(myFont);
+
         frame.setSize(600, 600);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -21,9 +25,11 @@ public class Main {
         // Create title label
         JLabel title = new JLabel("Survey Form");
         title.setHorizontalAlignment(JLabel.CENTER);
+        title.setFont(myFont);
 
         // Create start button
         JButton startButton = new JButton("Start!");
+        startButton.setFont(myFont);
         startButton.setHorizontalAlignment(JButton.CENTER);
 
         // Add components to the panel

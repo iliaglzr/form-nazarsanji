@@ -1,5 +1,5 @@
 package packages;
-
+import java.awt.Font;
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,8 +15,9 @@ public class thankYouPage {
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("Thank you for your participation!");
+        Font myFont = new Font("Arial", Font.PLAIN, 16);
+        thankYouLabel.setFont(myFont);
         thankYouLabel.setHorizontalAlignment(JLabel.CENTER);
-
 
         // Add components to the panel
         panel.add(thankYouLabel,BorderLayout.CENTER);

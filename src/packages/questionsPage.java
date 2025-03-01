@@ -1,5 +1,5 @@
 package packages;
-
+import java.awt.Font;
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,16 +15,24 @@ public class questionsPage {
         // Question 1
 
             JLabel question1 = new JLabel("How attractive do you find the software's user interface?");
+            Font myFont = new Font("Arial", Font.PLAIN, 16);
+            question1.setFont(myFont);
 
             JRadioButton radio1_1 = new JRadioButton("1");
+            radio1_1.setFont(myFont);
 
             JRadioButton radio1_2 = new JRadioButton("2");
+            radio1_2.setFont(myFont);
 
             JRadioButton radio1_3 = new JRadioButton("3");
+            radio1_3.setFont(myFont);
 
             JRadioButton radio1_4 = new JRadioButton("4");
+            radio1_4.setFont(myFont);
 
             JRadioButton radio1_5 = new JRadioButton("5");
+            radio1_5.setFont(myFont);
+
         question1.setPreferredSize(new Dimension(200,10));
         radio1_1.setPreferredSize(new Dimension(50,10));
         radio1_2.setPreferredSize(new Dimension(50,10));
@@ -42,11 +50,21 @@ public class questionsPage {
         // Question 2
 
             JLabel question2 = new JLabel("Is it easy for you to access the various features of the software?");
+            question2.setFont(myFont);
             JRadioButton radio2_1 = new JRadioButton("1");
+            radio2_1.setFont(myFont);
+
             JRadioButton radio2_2 = new JRadioButton("2");
+            radio2_2.setFont(myFont);
+
             JRadioButton radio2_3 = new JRadioButton("3");
+            radio2_3.setFont(myFont);
+
             JRadioButton radio2_4 = new JRadioButton("4");
+            radio2_4.setFont(myFont);
+
             JRadioButton radio2_5 = new JRadioButton("5");
+            radio2_5.setFont(myFont);
 
 
             question2.setPreferredSize(new Dimension(200,10));
@@ -66,11 +84,23 @@ public class questionsPage {
         // Question 3
 
             JLabel question3 = new JLabel("How simple and user-friendly is the software's page design?");
+            question3.setFont(myFont);
+
             JRadioButton radio3_1 = new JRadioButton("1");
+            radio3_1.setFont(myFont);
+
             JRadioButton radio3_2 = new JRadioButton("2");
+            radio3_2.setFont(myFont);
+
             JRadioButton radio3_3 = new JRadioButton("3");
+            radio3_3.setFont(myFont);
+
             JRadioButton radio3_4 = new JRadioButton("4");
+            radio3_4.setFont(myFont);
+
             JRadioButton radio3_5 = new JRadioButton("5");
+            radio3_5.setFont(myFont);
+
         panel.add(Box.createRigidArea(new Dimension(0, 10)));
         question3.setPreferredSize(new Dimension(200,10));
         radio3_1.setPreferredSize(new Dimension(50,10));
@@ -78,7 +108,6 @@ public class questionsPage {
         radio3_3.setPreferredSize(new Dimension(50,10));
         radio3_4.setPreferredSize(new Dimension(50,10));
         radio3_5.setPreferredSize(new Dimension(50,10));
-
 
         ButtonGroup group3 = new ButtonGroup();
         group3.add(radio3_1);
@@ -88,22 +117,24 @@ public class questionsPage {
         group3.add(radio3_5);
 
         // Question 4
-
-
-
-
         JLabel question4 = new JLabel("Are the colors and fonts used in the software appropriate?");
+            question4.setFont(myFont);
             panel.add(Box.createRigidArea(new Dimension(0, 10)));
 
         JRadioButton radio4_1 = new JRadioButton("1");
+            radio4_1.setFont(myFont);
 
         JRadioButton radio4_2 = new JRadioButton("2");
+            radio4_2.setFont(myFont);
 
         JRadioButton radio4_3 = new JRadioButton("3");
+            radio4_3.setFont(myFont);
 
         JRadioButton radio4_4 = new JRadioButton("4");
+            radio4_4.setFont(myFont);
 
         JRadioButton radio4_5 = new JRadioButton("5");
+            radio4_5.setFont(myFont);
 
         question4.setPreferredSize(new Dimension(200,10));
         radio4_1.setPreferredSize(new Dimension(50,10));
@@ -121,6 +152,7 @@ public class questionsPage {
         // Next button to go to Page3
 
         JButton nextButton = new JButton("Next Page");
+            nextButton.setFont(myFont);
 
         nextButton.addActionListener(e -> {
             frame.remove(panel);

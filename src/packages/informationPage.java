@@ -1,5 +1,5 @@
 package packages;
-
+import java.awt.Font;
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,6 +15,8 @@ public class informationPage {
         // Name Label and Text Field
 
             JLabel nameLabel = new JLabel("Name");
+        Font myFont = new Font("Arial", Font.PLAIN, 16);
+        nameLabel.setFont(myFont);
         nameLabel.setMaximumSize(new Dimension(500,50));
 
         JTextField nameField = new JTextField(15);
@@ -23,6 +25,7 @@ public class informationPage {
         // Age Label and Text Field
 
             JLabel ageLabel = new JLabel("Age");
+        ageLabel.setFont(myFont);
         ageLabel.setMaximumSize(new Dimension(500,50));
 
         JTextField ageField = new JTextField(15);
@@ -30,10 +33,8 @@ public class informationPage {
         // Email Label and Text Field
 
             JLabel emailLabel = new JLabel("Gmail");
+        emailLabel.setFont(myFont);
         emailLabel.setMaximumSize(new Dimension(500,50));
-
-
-
 
         JTextField emailField = new JTextField(15);
         emailField.setMaximumSize(new Dimension(500,50));
@@ -42,13 +43,15 @@ public class informationPage {
         // Software Familiarity Level
 
             JLabel levelLabel = new JLabel("Level of Familiarity with Similar Software ");
+            levelLabel.setFont(myFont);
             JRadioButton level1 = new JRadioButton("Beginner");
+            level1.setFont(myFont);
             JRadioButton level2 = new JRadioButton("Intermediate");
+            level2.setFont(myFont);
             JRadioButton level3 = new JRadioButton("Advanced");
+            level3.setFont(myFont);
             JRadioButton level4 = new JRadioButton("No Familiarity");
-
-
-
+            level4.setFont(myFont);
 
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
@@ -61,9 +64,7 @@ public class informationPage {
 
         panel.add(Box.createRigidArea(new Dimension(0, 20)));
             JButton nextButton = new JButton("Next Page");
-
-
-
+        nextButton.setFont(myFont);
 
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
